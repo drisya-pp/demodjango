@@ -1,0 +1,11 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+  <form method="POST">
+    {% csrf_token %}
+    Are you Want To Remove This Movie ?
+    <input type="submit">
+  </form>
+</div>
+{% endblock %}
